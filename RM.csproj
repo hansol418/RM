@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,8 +73,14 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +111,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-테스트-계정-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-레스토랑-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-집-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-집-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-레스토랑-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-카테고리-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-카테고리-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-피자-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-피자-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-레스토랑-테이블-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-레스토랑-테이블-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-직원-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-직원-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-터미널-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-터미널-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-부엌-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-부엌-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-설정-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-설정-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

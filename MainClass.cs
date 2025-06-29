@@ -16,7 +16,7 @@ namespace RM
         public static SqlConnection con = new SqlConnection(con_string);
 
        
-        //유저 검증에 있는 메서드 체크해봐야함
+        //유저 검증을 확인하는 메서드
 
         public static bool IsValidUser(string user, string pass)
         {
@@ -31,9 +31,22 @@ namespace RM
             if (dt.Rows.Count > 0)
             {
                 isvalid = true;
+                USER = dt.Rows[0]["uName"].ToString();
             }
 
             return isvalid;
         }
+
+        // 유저네임을 위한 속성 생성
+
+        public static string user;
+
+        public static string USER
+        {
+            get { return user; }
+            private set { user = value; }
+        }
+
+        
     }
 }
